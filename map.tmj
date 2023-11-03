@@ -20,10 +20,10 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":21,
          "id":6,
          "name":"start",
@@ -326,50 +326,28 @@
          "name":"floorLayer",
          "objects":[
                 {
-                 "class":"",
-                 "height":61.6672851518306,
-                 "id":12,
-                 "name":"clockPopup",
-                 "rotation":0,
-                 "visible":true,
-                 "width":93.7162209047986,
-                 "x":483.919325398621,
-                 "y":14.0269116471316
-                }, 
-                {
-                 "class":"area",
                  "height":128,
                  "id":13,
-                 "name":"jitsiChillZone",
+                 "name":"chill zone",
                  "properties":[
                         {
-                         "name":"focusable",
+                         "name":"ai-zone",
                          "type":"bool",
                          "value":true
                         }, 
                         {
-                         "name":"jitsiRoom",
+                         "name":"description",
                          "type":"string",
-                         "value":"ChillZone"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
-                        }, 
-                        {
-                         "name":"zoom_margin",
-                         "type":"float",
-                         "value":1
+                         "value":"People in this zone are relaxing."
                         }],
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":192,
                  "x":32,
                  "y":96
                 }, 
                 {
-                 "class":"area",
                  "height":128,
                  "id":14,
                  "name":"silentZone",
@@ -380,87 +358,121 @@
                          "value":true
                         }],
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":224,
                  "x":640,
                  "y":544
                 }, 
                 {
-                 "class":"area",
-                 "height":224,
+                 "height":351,
                  "id":16,
-                 "name":"jitsiMeetingRoom",
+                 "name":"meeting room",
                  "properties":[
                         {
-                         "name":"focusable",
+                         "name":"ai-zone",
                          "type":"bool",
                          "value":true
                         }, 
                         {
-                         "name":"jitsiRoom",
+                         "name":"description",
                          "type":"string",
-                         "value":"MeetingRoom"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
-                        }, 
-                        {
-                         "name":"zoom_margin",
-                         "type":"float",
-                         "value":1
+                         "value":"This is a meeting room where people gather that have meetings."
                         }],
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
-                 "width":192,
-                 "x":768,
-                 "y":224
+                 "width":225,
+                 "x":735,
+                 "y":97
                 }, 
                 {
-                 "class":"area",
-                 "height":39.6969696969697,
-                 "id":17,
-                 "name":"clock",
-                 "rotation":0,
-                 "visible":true,
-                 "width":50.2727272727272,
-                 "x":438.484848484849,
-                 "y":96.3333333333333
-                }, 
-                {
-                 "class":"area",
-                 "height":64,
-                 "id":18,
-                 "name":"to-conference",
+                 "height":125,
+                 "id":20,
+                 "name":"lobby",
                  "properties":[
                         {
-                         "name":"exitUrl",
-                         "type":"string",
-                         "value":"conference.tmj#from-office"
-                        }],
-                 "rotation":0,
-                 "visible":true,
-                 "width":32,
-                 "x":0,
-                 "y":512
-                }, 
-                {
-                 "class":"area",
-                 "height":32,
-                 "id":19,
-                 "name":"from-conference",
-                 "properties":[
-                        {
-                         "name":"start",
+                         "name":"ai-zone",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"description",
+                         "type":"string",
+                         "value":"This is the entrance of the office. People entering this place should be welcome in priority."
                         }],
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
-                 "width":32,
-                 "x":64,
-                 "y":544
+                 "width":127,
+                 "x":226,
+                 "y":415
+                }, 
+                {
+                 "height":125,
+                 "id":22,
+                 "name":"garden",
+                 "properties":[
+                        {
+                         "name":"ai-zone",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"description",
+                         "type":"string",
+                         "value":"This is the garden in front of the office. It has beatiful trees and is very quite."
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":413,
+                 "x":224.5,
+                 "y":542.5
+                }, 
+                {
+                 "height":161,
+                 "id":24,
+                 "name":"coffee machine",
+                 "properties":[
+                        {
+                         "name":"ai-zone",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"description",
+                         "type":"string",
+                         "value":"This is the coffee-machine zone. People in this zone are taking a break."
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":162,
+                 "x":30.5,
+                 "y":256.5
+                }, 
+                {
+                 "height":311,
+                 "id":25,
+                 "name":"work desks",
+                 "properties":[
+                        {
+                         "name":"ai-zone",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"description",
+                         "type":"string",
+                         "value":"People in this zone are working"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":384,
+                 "x":299,
+                 "y":93.5
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -543,7 +555,7 @@
          "y":0
         }],
  "nextlayerid":63,
- "nextobjectid":20,
+ "nextobjectid":27,
  "orientation":"orthogonal",
  "properties":[
         {
@@ -572,7 +584,7 @@
          "value":"src\/main.ts"
         }],
  "renderorder":"right-down",
- "tiledversion":"1.9.2",
+ "tiledversion":"1.10.2",
  "tileheight":32,
  "tilesets":[
         {
@@ -717,6 +729,6 @@
         }],
  "tilewidth":32,
  "type":"map",
- "version":"1.9",
+ "version":"1.10",
  "width":31
 }
